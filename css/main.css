@@ -1,0 +1,439 @@
+@font-face {
+  font-family: GOTHIC;
+  src: url('fonts/GOTHIC.ttf') format('ttf');
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.color-red {
+  color: #ec2020;
+}
+
+.body-wrap {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body-wrap .aside-block {
+  max-width: 300px;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+}
+
+.body-wrap .main-block {
+  width: -webkit-calc(66.66666666666667% - 30px);
+  width: calc(66.66666666666667% - 30px);
+}
+
+.fixed-menu {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  max-width: 300px;
+  width: 100%;
+}
+
+.fixed-menu .menu-items {
+  padding: 9rem 2.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fixed-menu .menu-items .menu-item {
+  padding-bottom: 3rem;
+}
+
+.fixed-menu .menu-items .menu-item a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'GOTHIC', sans-serif;
+  color: #000;
+}
+
+.fixed-menu .menu-items .menu-item a:hover {
+  color: #a21a1a;
+}
+
+.fixed-menu .order-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fixed-menu .order-items .menu-order {
+  width: 231px;
+  padding: 18px 0;
+  background-color: #ec2020;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.fixed-menu .order-items .menu-order span {
+  font-size: 24px;
+  font-family: 'GOTHIC', sans-serif;
+  color: #fff;
+}
+
+.fixed-menu .order-items .contacts {
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-family: 'GOTHIC', sans-serif;
+}
+
+.bgr {
+  background: url(/img/head_bgr.jpg) no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100%;
+  height: 1000px;
+}
+
+.bgr .title {
+  font-size: 7rem;
+  margin-left: 10rem;
+  padding-top: 10rem;
+  font-family: "GOTHIC", sans-serif;
+  color: #fff;
+  width: 27rem;
+}
+
+.bgr .title h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #fff;
+  padding-top: 4rem;
+}
+
+.advantages {
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages .adv-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(66.66666666666667% - 30px);
+  width: calc(66.66666666666667% - 30px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  border-bottom: 1px solid grey;
+}
+
+.advantages .adv_block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px);
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages .adv_block .adv_block_item {
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  font-family: 'Gothic', sans-serif;
+}
+
+.advantages .adv_block .adv_block_item img {
+  padding-right: 2rem;
+}
+
+.advantages .adv_block .adv_block_item span {
+  font-size: 1.5rem;
+  font-family: 'Gothic', sans-serif;
+}
+
+.our-prices {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.our-prices .slider {
+  background: url(/img/slide1.jpg) no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  max-width: 1730px;
+  width: 100%;
+  height: 1080px;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+}
+
+.our-prices .slider .slider-content {
+  width: 958px;
+  width: 100%;
+  text-align: center;
+}
+
+.our-prices .slider .slider-content h2 {
+  font-size: 7rem;
+  padding-top: 95px;
+}
+
+.our-prices .slider .slider-content h3 {
+  font-size: 3rem;
+}
+
+.our-prices .slider .slider-content span {
+  text-align: left;
+  width: 50%;
+}
+
+.our-contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+}
+
+.our-contacts h2 {
+  margin-bottom: 30px;
+  font-size: 8rem;
+  font-family: sans-serif;
+}
+
+.our-contacts form {
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-contacts form input {
+  padding: 20px;
+  margin-bottom: 5px;
+  width: 920px;
+  background-color: #ccc;
+  border: none;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.our-contacts .contact-btn {
+  background-color: #ec2020;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  border: none;
+  color: #fff;
+  max-width: 634px;
+  width: 100%;
+  font-size: 60px;
+  padding: 52px 0;
+  margin-top: 4rem;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
