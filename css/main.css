@@ -1,6 +1,7 @@
 @font-face {
-  font-family: GOTHIC;
-  src: url('fonts/GOTHIC.ttf') format('ttf');
+  font-family: Century Gothic Regular;
+  src: url('fonts/Century Gothic Regular.ttf') format('ttf');
+  src: url('fonts/Cambria.ttf') format('ttf');
 }
 
 body,
@@ -117,8 +118,12 @@ img {
   color: #ec2020;
 }
 
+html {
+  font-size: 16px;
+}
+
 .body-wrap {
-  margin: 0 auto;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -128,31 +133,46 @@ img {
           flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /*bgr*/
+  /*fixed-menu*/
+  /*aside*/
+  /*main-block*/
 }
 
-.body-wrap .aside-block {
-  max-width: 300px;
+.body-wrap .bgr {
+  background: url(/img/head_bgr.jpg) no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  max-width: 1620px;
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
-  width: -webkit-calc(33.333333333333336% - 30px);
-  width: calc(33.333333333333336% - 30px);
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+  margin-left: 20rem;
 }
 
-.body-wrap .main-block {
-  width: -webkit-calc(66.66666666666667% - 30px);
-  width: calc(66.66666666666667% - 30px);
+.body-wrap .bgr .title {
+  font-size: 7rem;
+  margin-left: 10rem;
+  padding-top: 10rem;
+  font-family: "Century Gothic Regular", sans-serif;
+  color: #fff;
+  width: 27rem;
 }
 
-.fixed-menu {
+.body-wrap .bgr .title h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #fff;
+  padding-top: 4rem;
+}
+
+.body-wrap .fixed-menu {
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -164,11 +184,17 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
+  left: 0;
+  top: 0;
   max-width: 300px;
   width: 100%;
+  height: 100vh;
+  z-index: 10;
+  /*menu-items*/
+  /*order-items*/
 }
 
-.fixed-menu .menu-items {
+.body-wrap .fixed-menu .menu-items {
   padding: 9rem 2.9rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -181,22 +207,22 @@ img {
           flex-direction: column;
 }
 
-.fixed-menu .menu-items .menu-item {
+.body-wrap .fixed-menu .menu-items .menu-item {
   padding-bottom: 3rem;
 }
 
-.fixed-menu .menu-items .menu-item a {
+.body-wrap .fixed-menu .menu-items .menu-item a {
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: 'GOTHIC', sans-serif;
+  font-family: 'Century Gothic Regular', sans-serif;
   color: #000;
 }
 
-.fixed-menu .menu-items .menu-item a:hover {
+.body-wrap .fixed-menu .menu-items .menu-item a:hover {
   color: #a21a1a;
 }
 
-.fixed-menu .order-items {
+.body-wrap .fixed-menu .order-items {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -212,7 +238,7 @@ img {
           align-items: center;
 }
 
-.fixed-menu .order-items .menu-order {
+.body-wrap .fixed-menu .order-items .menu-order {
   width: 231px;
   padding: 18px 0;
   background-color: #ec2020;
@@ -222,43 +248,40 @@ img {
   margin-bottom: 2rem;
 }
 
-.fixed-menu .order-items .menu-order span {
+.body-wrap .fixed-menu .order-items .menu-order span {
   font-size: 24px;
-  font-family: 'GOTHIC', sans-serif;
+  font-family: 'Century Gothic Regular', sans-serif;
   color: #fff;
 }
 
-.fixed-menu .order-items .contacts {
+.body-wrap .fixed-menu .order-items .contacts {
   line-height: 3rem;
   font-size: 1.5rem;
-  font-family: 'GOTHIC', sans-serif;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
-.bgr {
-  background: url(/img/head_bgr.jpg) no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+.body-wrap .aside-block {
+  max-width: 300px;
   width: 100%;
-  height: 1000px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
 }
 
-.bgr .title {
-  font-size: 7rem;
-  margin-left: 10rem;
-  padding-top: 10rem;
-  font-family: "GOTHIC", sans-serif;
-  color: #fff;
-  width: 27rem;
+.body-wrap .main-block {
+  max-width: 1600px;
+  width: 100%;
+  margin-left: 19rem;
+  /*advantages*/
+  /*our-prices*/
+  /*our-contacts*/
 }
 
-.bgr .title h3 {
-  font-size: 3rem;
-  line-height: 4rem;
-  color: #fff;
-  padding-top: 4rem;
-}
-
-.advantages {
+.body-wrap .main-block .advantages {
   margin: 5rem auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -269,18 +292,13 @@ img {
           flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.advantages .adv-header {
+.body-wrap .main-block .advantages .adv-header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   word-wrap: break-word;
@@ -288,15 +306,14 @@ img {
   margin-right: 15px;
   width: -webkit-calc(66.66666666666667% - 30px);
   width: calc(66.66666666666667% - 30px);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 3rem;
   border-bottom: 1px solid grey;
 }
 
-.advantages .adv_block {
+.body-wrap .main-block .advantages .adv_block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   word-wrap: break-word;
@@ -304,28 +321,31 @@ img {
   margin-right: 15px;
   width: -webkit-calc(50% - 30px);
   width: calc(50% - 30px);
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.advantages .adv_block .adv_block_item {
-  padding-top: 3rem;
+.body-wrap .main-block .advantages .adv_block .adv_block_item {
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+  line-height: 8rem;
   font-size: 1.5rem;
-  font-family: 'Gothic', sans-serif;
+  font-family: 'Cambria', sans-serif;
 }
 
-.advantages .adv_block .adv_block_item img {
+.body-wrap .main-block .advantages .adv_block .adv_block_item i {
   padding-right: 2rem;
+  font-size: 4.5rem;
 }
 
-.advantages .adv_block .adv_block_item span {
+.body-wrap .main-block .advantages .adv_block .adv_block_item span {
   font-size: 1.5rem;
-  font-family: 'Gothic', sans-serif;
+  font-family: 'Century Gothic Regular ', sans-serif;
 }
 
-.our-prices {
+.body-wrap .main-block .our-prices {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -335,15 +355,16 @@ img {
           flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-}
-
-.our-prices .slider {
   background: url(/img/slide1.jpg) no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
   max-width: 1730px;
   width: 100%;
   height: 1080px;
+  /*slider*/
+}
+
+.body-wrap .main-block .our-prices .slider {
   color: #fff;
   font-family: sans-serif;
   text-align: center;
@@ -354,29 +375,57 @@ img {
   margin-right: 15px;
   width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
+  /*slider-content*/
 }
 
-.our-prices .slider .slider-content {
-  width: 958px;
+.body-wrap .main-block .our-prices .slider .slider-content {
+  max-width: 958px;
   width: 100%;
   text-align: center;
 }
 
-.our-prices .slider .slider-content h2 {
+.body-wrap .main-block .our-prices .slider .slider-content h2 {
   font-size: 7rem;
   padding-top: 95px;
 }
 
-.our-prices .slider .slider-content h3 {
+.body-wrap .main-block .our-prices .slider .slider-content h3 {
   font-size: 3rem;
+  margin-top: 40px;
 }
 
-.our-prices .slider .slider-content span {
+.body-wrap .main-block .our-prices .slider .slider-content span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   text-align: left;
-  width: 50%;
+  margin-top: 50px;
+  font-family: 'Cambria';
+  font-size: 2.2rem;
 }
 
-.our-contacts {
+.body-wrap .main-block .our-prices .slider .slider-content button {
+  background-color: #ec2020;
+  color: #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  width: 634px;
+  height: 168px;
+  font-size: 4rem;
+  margin-top: 100px;
+  border: none;
+}
+
+.body-wrap .main-block .our-contacts {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -396,15 +445,17 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem;
+  /*form*/
+  /*contact-btn*/
 }
 
-.our-contacts h2 {
+.body-wrap .main-block .our-contacts h2 {
   margin-bottom: 30px;
   font-size: 8rem;
-  font-family: sans-serif;
+  font-family: "Century Gothic Regular", sans-serif;
 }
 
-.our-contacts form {
+.body-wrap .main-block .our-contacts form {
   margin-top: 2rem;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -412,28 +463,44 @@ img {
           justify-content: center;
 }
 
-.our-contacts form input {
+.body-wrap .main-block .our-contacts form input,
+.body-wrap .main-block .our-contacts form textarea {
   padding: 20px;
-  margin-bottom: 5px;
-  width: 920px;
+  margin-bottom: 10px;
+  width: 880px;
   background-color: #ccc;
   border: none;
-  font-family: sans-serif;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-family: "Cambria";
+  font-size: 2rem;
   color: #000;
 }
 
-.our-contacts .contact-btn {
+.body-wrap .main-block .our-contacts .contact-btn {
   background-color: #ec2020;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
   border: none;
   color: #fff;
-  max-width: 634px;
+  max-width: 520px;
   width: 100%;
   font-size: 60px;
-  padding: 52px 0;
+  padding: 34px 0;
   margin-top: 4rem;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  margin-left: 14rem;
+  font-family: "Century Gothic Regular";
 }
+
+/*body-wrap*/

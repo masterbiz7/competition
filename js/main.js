@@ -1,16 +1,12 @@
 $(function() {
-$('.carousel').carousel({
-      interval: 20000;
-    });
 
-
-/*$('.slider').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2,  
+$('.slider').slick({
+  infinite: true,  
+  slidesToScroll: 1,  
   dots: true,
-  speed: 1000,  
-  responsive: [
+  dotsClass: 'slick-dots',
+  speed: 1000  
+  /*responsive: [
     {
       breakpoint: 1024,
       settings: {
@@ -43,8 +39,8 @@ $('.carousel').carousel({
         slidesToScroll: 1
       }
     }
-    ]  
+    ] */ 
   
-});*/
+});
 
 });
