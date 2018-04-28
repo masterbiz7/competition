@@ -122,57 +122,80 @@ html {
   font-size: 16px;
 }
 
-.body-wrap {
+/*******************************************/
+
+/*******************************************/
+
+.side-block {
+  max-width: 300px;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-  /*bgr*/
-  /*fixed-menu*/
-  /*aside*/
-  /*main-block*/
 }
 
-.body-wrap .bgr {
+header {
   background: url(/img/head_bgr.jpg) no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
   max-width: 1620px;
   width: 100%;
-  height: 1000px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: -webkit-calc(100% - 30px);
-  width: calc(100% - 30px);
-  margin-left: 20rem;
 }
 
-.body-wrap .bgr .title {
+header .header__title {
+  margin-left: 15.8rem;
+}
+
+header .header__title h1 {
+  font-family: "Century Gothic Regular";
   font-size: 7rem;
-  margin-left: 10rem;
-  padding-top: 10rem;
-  font-family: "Century Gothic Regular", sans-serif;
+  padding-top: 6rem;
   color: #fff;
-  width: 27rem;
+  width: 40rem;
+  margin-bottom: 4rem;
 }
 
-.body-wrap .bgr .title h3 {
+header .header__title p {
+  font-family: Cambria;
   font-size: 3rem;
-  line-height: 4rem;
-  color: #fff;
-  padding-top: 4rem;
+  color: #ffffff;
+  padding-top: 2rem;
 }
 
-.body-wrap .fixed-menu {
+/** Advantages **/
+
+.advantages {
+  color: #000;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 5rem;
+}
+
+.advantages h2 {
+  font-size: 5rem;
+  border-bottom: 2px solid #000;
+  font-family: "Century Gothic Regular";
+  text-align: center;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+.advantages i {
+  font-size: 4.5rem;
+}
+
+.advantages p.adv-item {
+  font-family: "Cambria";
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 0 2rem;
+  margin-bottom: 6rem;
+}
+
+/******************************************/
+
+.fixed-menu {
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -186,16 +209,15 @@ html {
   position: fixed;
   left: 0;
   top: 0;
-  max-width: 300px;
+  max-width: 280px;
   width: 100%;
-  height: 100vh;
   z-index: 10;
   /*menu-items*/
   /*order-items*/
 }
 
-.body-wrap .fixed-menu .menu-items {
-  padding: 9rem 2.9rem;
+.fixed-menu .menu-items {
+  padding: 8rem 2.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -207,22 +229,22 @@ html {
           flex-direction: column;
 }
 
-.body-wrap .fixed-menu .menu-items .menu-item {
+.fixed-menu .menu-items .menu-item {
   padding-bottom: 3rem;
 }
 
-.body-wrap .fixed-menu .menu-items .menu-item a {
+.fixed-menu .menu-items .menu-item a {
   text-decoration: none;
   font-size: 1.5rem;
   font-family: 'Century Gothic Regular', sans-serif;
   color: #000;
 }
 
-.body-wrap .fixed-menu .menu-items .menu-item a:hover {
+.fixed-menu .menu-items .menu-item a:hover {
   color: #a21a1a;
 }
 
-.body-wrap .fixed-menu .order-items {
+.fixed-menu .order-items {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -238,7 +260,7 @@ html {
           align-items: center;
 }
 
-.body-wrap .fixed-menu .order-items .menu-order {
+.fixed-menu .order-items .menu-order {
   width: 231px;
   padding: 18px 0;
   background-color: #ec2020;
@@ -248,153 +270,73 @@ html {
   margin-bottom: 2rem;
 }
 
-.body-wrap .fixed-menu .order-items .menu-order span {
+.fixed-menu .order-items .menu-order span {
   font-size: 24px;
   font-family: 'Century Gothic Regular', sans-serif;
   color: #fff;
 }
 
-.body-wrap .fixed-menu .order-items .contacts {
+.fixed-menu .order-items .contacts {
   line-height: 3rem;
   font-size: 1.5rem;
   font-family: 'Century Gothic Regular', sans-serif;
 }
 
-.body-wrap .aside-block {
-  max-width: 300px;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: -webkit-calc(33.333333333333336% - 30px);
-  width: calc(33.333333333333336% - 30px);
-}
+/*fixed-menu*/
 
-.body-wrap .main-block {
-  max-width: 1600px;
-  width: 100%;
-  margin-left: 19rem;
-  /*advantages*/
-  /*our-prices*/
-  /*our-contacts*/
-}
+/*************************************/
 
-.body-wrap .main-block .advantages {
-  margin: 5rem auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.body-wrap .main-block .advantages .adv-header {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: -webkit-calc(66.66666666666667% - 30px);
-  width: calc(66.66666666666667% - 30px);
+.slider {
+  color: #fff;
+  font-family: 'Century Gothic Regular', sans-serif;
   text-align: center;
-  padding-bottom: 2rem;
-  margin-bottom: 3rem;
-  font-size: 3rem;
-  border-bottom: 1px solid grey;
-}
-
-.body-wrap .main-block .advantages .adv_block {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: -webkit-calc(50% - 30px);
-  width: calc(50% - 30px);
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.body-wrap .main-block .advantages .adv_block .adv_block_item {
-  padding-left: 2rem;
-  margin-bottom: 3rem;
-  line-height: 8rem;
-  font-size: 1.5rem;
-  font-family: 'Cambria', sans-serif;
-}
-
-.body-wrap .main-block .advantages .adv_block .adv_block_item i {
-  padding-right: 2rem;
-  font-size: 4.5rem;
-}
-
-.body-wrap .main-block .advantages .adv_block .adv_block_item span {
-  font-size: 1.5rem;
-  font-family: 'Century Gothic Regular ', sans-serif;
-}
-
-.body-wrap .main-block .our-prices {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
   background: url(/img/slide1.jpg) no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
-  max-width: 1730px;
   width: 100%;
-  height: 1080px;
-  /*slider*/
-}
-
-.body-wrap .main-block .our-prices .slider {
-  color: #fff;
-  font-family: sans-serif;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: -webkit-calc(100% - 30px);
-  width: calc(100% - 30px);
   /*slider-content*/
 }
 
-.body-wrap .main-block .our-prices .slider .slider-content {
+.slider .prev {
+  position: relative;
+  top: 0;
+  left: 4.1%;
+  z-index: 20;
+  max-width: 5rem;
+  width: 100%;
+  -webkit-transform: translateY(307%);
+      -ms-transform: translateY(307%);
+          transform: translateY(307%);
+}
+
+.slider .next {
+  position: relative;
+  top: 100%;
+  left: 90.8%;
+  z-index: 20;
+  max-width: 5rem;
+  width: 100%;
+  -webkit-transform: translateY(-880%);
+      -ms-transform: translateY(-880%);
+          transform: translateY(-880%);
+}
+
+.slider .slider-content {
   max-width: 958px;
   width: 100%;
   text-align: center;
 }
 
-.body-wrap .main-block .our-prices .slider .slider-content h2 {
+.slider .slider-content h2 {
   font-size: 7rem;
-  padding-top: 95px;
 }
 
-.body-wrap .main-block .our-prices .slider .slider-content h3 {
+.slider .slider-content h3 {
   font-size: 3rem;
   margin-top: 40px;
 }
 
-.body-wrap .main-block .our-prices .slider .slider-content span {
+.slider .slider-content span {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -413,7 +355,7 @@ html {
   font-size: 2.2rem;
 }
 
-.body-wrap .main-block .our-prices .slider .slider-content button {
+.slider .slider-content button {
   background-color: #ec2020;
   color: #fff;
   -webkit-border-radius: 8px;
@@ -425,7 +367,11 @@ html {
   border: none;
 }
 
-.body-wrap .main-block .our-contacts {
+/*slider*/
+
+/*************************************/
+
+.our-contacts {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -449,13 +395,13 @@ html {
   /*contact-btn*/
 }
 
-.body-wrap .main-block .our-contacts h2 {
+.our-contacts h2 {
   margin-bottom: 30px;
   font-size: 8rem;
-  font-family: "Century Gothic Regular", sans-serif;
+  font-family: "Century Gothic Regular";
 }
 
-.body-wrap .main-block .our-contacts form {
+.our-contacts form {
   margin-top: 2rem;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -463,8 +409,8 @@ html {
           justify-content: center;
 }
 
-.body-wrap .main-block .our-contacts form input,
-.body-wrap .main-block .our-contacts form textarea {
+.our-contacts form input,
+.our-contacts form textarea {
   padding: 20px;
   margin-bottom: 10px;
   width: 880px;
@@ -477,7 +423,7 @@ html {
   color: #000;
 }
 
-.body-wrap .main-block .our-contacts .contact-btn {
+.our-contacts .contact-btn {
   background-color: #ec2020;
   display: -webkit-box;
   display: -webkit-flex;
@@ -499,8 +445,8 @@ html {
   margin-top: 4rem;
   -webkit-border-radius: 20px;
           border-radius: 20px;
-  margin-left: 14rem;
+  margin-left: 12rem;
   font-family: "Century Gothic Regular";
 }
 
-/*body-wrap*/
+/*our-contacts*********************************/
