@@ -15,7 +15,9 @@ $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: true,
+        prevArrow: '<img class="prev" src="img/slide-left.png" alt="prev" />',
+        nextArrow: '<img class="next" src="img/slide-right.png" alt="next" />'
       }
     },
     {
@@ -41,7 +43,7 @@ $('.slider').slick({
         slidesToScroll: 1
       }
     }
-    ] */ 
+    ] */
   
 });
 

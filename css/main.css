@@ -133,8 +133,9 @@ html {
 
 header {
   background: url(/img/head_bgr.jpg) no-repeat;
-  max-width: 1620px;
+  max-width: 1600px;
   width: 100%;
+  height: 980px;
 }
 
 header .header__title {
@@ -165,11 +166,12 @@ header .header__title p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 5rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  max-width: 1580px;
 }
 
 .advantages h2 {
@@ -188,7 +190,7 @@ header .header__title p {
 .advantages p.adv-item {
   font-family: "Cambria";
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 1;
   padding: 0 2rem;
   margin-bottom: 6rem;
 }
@@ -288,11 +290,12 @@ header .header__title p {
 
 .slider {
   color: #fff;
-  font-family: 'Century Gothic Regular', sans-serif;
+  font-family: 'Century Gothic Regular';
   text-align: center;
   background: url(/img/slide1.jpg) no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
+  max-width: 1600px;
   width: 100%;
   /*slider-content*/
 }
@@ -300,7 +303,7 @@ header .header__title p {
 .slider .prev {
   position: relative;
   top: 0;
-  left: 4.1%;
+  left: -40%;
   z-index: 20;
   max-width: 5rem;
   width: 100%;
@@ -312,7 +315,7 @@ header .header__title p {
 .slider .next {
   position: relative;
   top: 100%;
-  left: 90.8%;
+  left: 40%;
   z-index: 20;
   max-width: 5rem;
   width: 100%;
@@ -322,7 +325,7 @@ header .header__title p {
 }
 
 .slider .slider-content {
-  max-width: 958px;
+  max-width: 60rem;
   width: 100%;
   text-align: center;
 }
@@ -333,6 +336,7 @@ header .header__title p {
 
 .slider .slider-content h3 {
   font-size: 3rem;
+  font-family: "Cambria";
   margin-top: 40px;
 }
 
@@ -372,15 +376,8 @@ header .header__title p {
 /*************************************/
 
 .our-contacts {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  max-width: 1600px;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -445,8 +442,83 @@ header .header__title p {
   margin-top: 4rem;
   -webkit-border-radius: 20px;
           border-radius: 20px;
-  margin-left: 12rem;
+  margin-left: 10rem;
   font-family: "Century Gothic Regular";
 }
 
 /*our-contacts*********************************/
+
+@media screen and (min-width: 1440px) {
+  .fixed-menu {
+    max-width: 180px;
+    font-size: 0.1rem;
+  }
+
+  .fixed-menu .order-items {
+    padding-left: 70px;
+  }
+
+  .fixed-menu .order-items button,
+  .fixed-menu .order-items .contacts {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slider .next {
+    -webkit-transform: translateY(-880%);
+        -ms-transform: translateY(-880%);
+            transform: translateY(-880%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fixed-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1024px;
+    height: 6rem;
+    width: 100%;
+  }
+
+  .fixed-menu .menu-items {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 20px 0 10px;
+  }
+
+  .fixed-menu .menu-items .menu-item a {
+    margin-right: 15px;
+    font-size: 0.9rem;
+  }
+
+  .fixed-menu .menu-items .menu-item a:first-child {
+    margin-left: 10px;
+  }
+
+  .fixed-menu .menu-order {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    margin: 2rem -40px;
+  }
+
+  .fixed-menu .contacts p {
+    line-height: 2rem;
+    font-size: 1rem;
+    padding-left: 30px;
+  }
+
+  .slider-content p {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
