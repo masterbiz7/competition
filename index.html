@@ -13,14 +13,15 @@
 		<div class="container-fluid">
 			<div class="row align-items-center">
 				<div class="col offset-xl-0 side-block">
-					<nav class="fixed-menu">
-						<ul class="menu-items flex-xl-column flex-sm-row">
-							<li class="menu-item"><a href="#">Разработка сайтов</a></li>
+					
+					<nav class="fixed-menu fixed-top">
+						<ul class="menu-items">
+							<li class="menu-item"><a class="d-sm-none d-md-flex" href="#">Разработка сайтов</a></li>
 							<li class="menu-item"><a href="#">Преимущества работы с нами</a></li>
 							<li class="menu-item"><a href="#">Цены</a></li>
 							<li class="menu-item"><a href="#">Контакты</a></li>
 						</ul>
-						<ul class="order-items flex-xl-column flex-sm-row">
+						<ul class="order-items">
 							<li>
 								<button class="menu-order"><span>Заказать</span></button>
 							</li>
@@ -30,6 +31,24 @@
 						
 					</ul>
 				</nav>
+
+					<div class="hidden-menu">
+						<div class="hamburger-menu position-fixed">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+						<div class="hidden-menu__items">
+							<p><a href="">Разработка сайтов</a></p>
+							<p><a href="">Преимущества работы с нами</a></p>
+							<p><a href="">Цены</a></p>
+							<p><a href="">Контакты</a></p>
+							<button class="btn-order">Заказать</button>
+							<span class="h-contacts"><p>+7-999-999-99-99</p></span>
+							<span class="h-contacts"><p>something@mail.com</p></span>
+						</div>
+					</div>
+
 			</div>
 			<div class="col col-xl-10 col-sm-12 offset-xl-2 offset-sm-0">
 				<header>
@@ -114,9 +133,10 @@
 			
 			
 			</div><!--body-wrap-->
-			<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
-			<script src="js/slick.min.js"></script>
+			<script src="js/slick.min.js"></script>			
 			<script src="js/main.js"></script>
+			<script src="js/menu.js"></script>
 		</body>
 	</html>
