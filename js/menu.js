@@ -1,5 +1,5 @@
 $(function() {
-	 if ($(window).width() == 560) {
+	 if ($(window).width() == 768) {
 	 	$(".fixed-menu").css("top", "-1000px");
 	 } else {
 	 	$(".fixed-menu").css("top", "0");

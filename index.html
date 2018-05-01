@@ -16,10 +16,10 @@
 					
 					<nav class="fixed-menu fixed-top">
 						<ul class="menu-items">
-							<li class="menu-item"><a class="d-sm-none d-md-flex" href="#">Разработка сайтов</a></li>
-							<li class="menu-item"><a href="#">Преимущества работы с нами</a></li>
-							<li class="menu-item"><a href="#">Цены</a></li>
-							<li class="menu-item"><a href="#">Контакты</a></li>
+							<li class="menu-item"><a class="d-sm-none d-md-flex" href="#site-dev">Разработка сайтов</a></li>
+							<li class="menu-item"><a href="#adv">Преимущества работы с нами</a></li>
+							<li class="menu-item"><a href="#prices">Цены</a></li>
+							<li class="menu-item"><a href="#contacts">Контакты</a></li>
 						</ul>
 						<ul class="order-items">
 							<li>
@@ -51,7 +51,7 @@
 
 			</div>
 			<div class="col col-xl-10 col-sm-12 offset-xl-2 offset-sm-0">
-				<header>
+				<header id="site-dev">
 					<div class="header__title">
 						<h1>Internet Agency of Teriam</h1>
 						<p>Разработка</p>
@@ -59,7 +59,7 @@
 					</div>
 				</header>
 				<div class="container-fluid">
-					<div class="row advantages">
+					<div class="row advantages" id="adv">
 						<h2>Преимущества работы с нами</h2>
 						<table class="table table-borderless">
 							<tr>
@@ -82,47 +82,47 @@
 							</tr>
 						</table>						
 					</div>
-					<div class="row">
+					<div class="row" id="prices">
 						<div class="slider">
 							<div class="slider-content">
 								<h2>Наши цены</h2>
 								<h3>Создать сайт в короткие сроки</h3>
-								<span><p>Создание сайта в короткие сроки ни коим образом не повлияет на качество работы, а лишь ускорит её. Данный вариант занимает сроки выполнения от 1 до 3 дней. Работа выполняется несколькими командами профессиональных кадров.</p>
+								<span class="pl-5 pr-5"><p>Создание сайта в короткие сроки ни коим образом не повлияет на качество работы, а лишь ускорит её. Данный вариант занимает сроки выполнения от 1 до 3 дней. Работа выполняется несколькими командами профессиональных кадров.</p>
 								<p>Стоимость услуги: От 30 000 рублей</p></span>
 								<button>Заказать</button>
 							</div>
 							<div class="slider-content">
 								<h2>Наши цены</h2>
 								<h3>Создание сложных сайтов</h3>
-								<span><p>Создание профессиональных многостраничных сайтов. Сроки ограничиваются по договоренности с клиентом. Работа выполняется профессиональными исполнителями.</p>
+								<span class="pl-5 pr-5"><p>Создание профессиональных многостраничных сайтов. Сроки ограничиваются по договоренности с клиентом. Работа выполняется профессиональными исполнителями.</p>
 								<p>Стоимость услуги: От 50 000 рублей</p></span>
 								<button>Заказать</button>
 							</div>
 							<div class="slider-content">
 								<h2>Наши цены</h2>
 								<h3>Дешёвое создание сайтов</h3>
-								<span><p>Дешевые создания сайтов выполняются начинающими исполнителями. Качество работы гарантируем отличное. Все их работы проходят проверку профессионалами.</p>
+								<span class="pl-5 pr-5"><p>Дешевые создания сайтов выполняются начинающими исполнителями. Качество работы гарантируем отличное. Все их работы проходят проверку профессионалами.</p>
 								<p>Стоимость: От 8 000 рублей</p></span>
 								<button>Заказать</button>
 							</div>
 							<div class="slider-content">
 								<h2>Наши цены</h2>
 								<h3>Стандартное создание сайтов</h3>
-								<span><p>Уровень сложности заказа средний.
+								<span class="pl-5 pr-5"><p>Уровень сложности заказа средний.
 Над проектом работает одна команда специалистов среднего уровня. Сроки выполнения - договорные</p>
 								<p>Стоимость услуги: От 15 000 рублей</p></span>
 								<button>Заказать</button>
 							</div>
 						</div>
 					</div>
-					<section class="our-contacts text-center">
+					<section class="our-contacts text-center" id="contacts">
 						<h2>Контакты</h2>
 						<form action="sendMail.php" method="POST">
 							<p><input type="text" name="name" placeholder="Ваше имя"></p>
 							<p><input type="phone" name="phone" placeholder="Телефон"></p>
 							<p><input type="email" name="email" placeholder="email"></p>
 							<p><textarea name="message" rows="5" cols="118" placeholder="Комментарий"></textarea></p>
-							<button type="submit" class="contact-btn">Отправить</button>
+							<span class="align-items-center"><button type="submit" class="btn btn-send pl-5 pr-5">Отправить</button></span>
 						</form>
 						
 					</section>
