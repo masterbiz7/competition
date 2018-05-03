@@ -11,46 +11,46 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row align-items-center">
-				<div class="col offset-xl-0 side-block">
+			<div class="row no-gutters">		
 					
-					<nav class="fixed-menu fixed-top">
-						<ul class="menu-items">
-							<li class="menu-item"><a class="d-sm-none d-md-flex" href="#site-dev">Разработка сайтов</a></li>
+					<nav class="fixed-menu position-fixed">
+						<ul class="menu-items flex-xl-column pl-2">
+							<li class="menu-item"><a href="#site-dev">Разработка сайтов</a></li>
 							<li class="menu-item"><a href="#adv">Преимущества работы с нами</a></li>
 							<li class="menu-item"><a href="#prices">Цены</a></li>
-							<li class="menu-item"><a href="#contacts">Контакты</a></li>
-						</ul>
-						<ul class="order-items">
-							<li>
-								<button class="menu-order"><span>Заказать</span></button>
-							</li>
-							<li class="contacts"><p>+7-999-999-99-99</p>
-							<p>something@mail.com</p>
-						</li>
+							<li class="menu-item"><a href="#contacts">Контакты</a></li>		
 						
-					</ul>
-				</nav>
+							<li class="order-items">
+								<button class="menu-order"><span>Заказать</span></button>
+							
+							<span class="contacts">
+								<p>+7-999-999-99-99</p>
+								<p>something@mail.com</p>
+							</span>
+							</li>						
+						</ul>
+					</nav>
 
-					<div class="hidden-menu">
-						<div class="hamburger-menu position-fixed">
+					<div class="hidden-menu justify-content-start">
+						<div class="hamburger-menu position-fixed d-xl-none">
 							<div class="line"></div>
 							<div class="line"></div>
 							<div class="line"></div>
 						</div>
-						<div class="hidden-menu__items">
+						<div class="hidden-menu__items text-center flex-column">
 							<p><a href="">Разработка сайтов</a></p>
 							<p><a href="">Преимущества работы с нами</a></p>
 							<p><a href="">Цены</a></p>
 							<p><a href="">Контакты</a></p>
-							<button class="btn-order">Заказать</button>
+							<button type="submit" class="btn-order">Заказать</button>
 							<span class="h-contacts"><p>+7-999-999-99-99</p></span>
 							<span class="h-contacts"><p>something@mail.com</p></span>
 						</div>
 					</div>
 
+				
 			</div>
-			<div class="col col-xl-10 col-sm-12 offset-xl-2 offset-sm-0">
+			<div class="block-wrap col col-lg-12 offset-xl-2 offset-sm-0">
 				<header id="site-dev">
 					<div class="header__title">
 						<h1>Internet Agency of Teriam</h1>
@@ -59,7 +59,7 @@
 					</div>
 				</header>
 				<div class="container-fluid">
-					<div class="row advantages" id="adv">
+					<div class="row advantages mt-5 mb-5" id="adv">
 						<h2>Преимущества работы с нами</h2>
 						<table class="table table-borderless">
 							<tr>
@@ -122,7 +122,7 @@
 							<p><input type="phone" name="phone" placeholder="Телефон"></p>
 							<p><input type="email" name="email" placeholder="email"></p>
 							<p><textarea name="message" rows="5" cols="118" placeholder="Комментарий"></textarea></p>
-							<span class="align-items-center"><button type="submit" class="btn btn-send pl-5 pr-5">Отправить</button></span>
+							<span class="align-self-center"><button type="submit" class="btn btn-send pl-5 pr-5">Отправить</button></span>
 						</form>
 						
 					</section>
