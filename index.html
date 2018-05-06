@@ -1,142 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<script>
+					if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1
+		var dpt = window.devicePixelRatio;
+		var widthM = window.screen.width * dpt;
+		var widthH = window.screen.height * dpt;
+		document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');
+		}
+		</script>
 		<title>Internet agency of Teriam</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/slick.css">
-		<link rel="stylesheet" href="css/slick-theme.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row no-gutters">		
-					
-					<nav class="fixed-menu position-fixed">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-toggleable fixed-top">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav m-auto">
+							<a class="nav-item nav-link active" href="#site-dev">Разработка сайтов<span class="sr-only">(current)</span></a>
+							<a class="nav-item nav-link text-black" href="#adv">Преимущества работы с нами</a>
+							<a class="nav-item nav-link" href="#prices">Цены</a>
+							<a class="nav-item nav-link" href="#contacts">Контакты</a>
+							<button class="nav-item menu-order"><span class="text-white">Заказать</span></button>
+							<div class="flex-column pl-3 pr-4">
+								<p class="nav-item">+7-999-999-99-99</p>
+								<p class="nav-item">something@mail.com</p>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="col">
+					<section class="fixed-menu position-fixed">
 						<ul class="menu-items flex-xl-column pl-2">
 							<li class="menu-item"><a href="#site-dev">Разработка сайтов</a></li>
 							<li class="menu-item"><a href="#adv">Преимущества работы с нами</a></li>
 							<li class="menu-item"><a href="#prices">Цены</a></li>
-							<li class="menu-item"><a href="#contacts">Контакты</a></li>		
-						
+							<li class="menu-item"><a href="#contacts">Контакты</a></li>
+							
 							<li class="order-items">
 								<button class="menu-order"><span>Заказать</span></button>
-							
-							<span class="contacts">
-								<p>+7-999-999-99-99</p>
-								<p>something@mail.com</p>
-							</span>
-							</li>						
+								
+								<span class="contacts">
+									<p>+7-999-999-99-99</p>
+									<p>something@mail.com</p>
+								</span>
+							</li>
 						</ul>
-					</nav>
-
-					<div class="hidden-menu justify-content-start">
-						<div class="hamburger-menu position-fixed d-xl-none">
-							<div class="line"></div>
-							<div class="line"></div>
-							<div class="line"></div>
+					</section>
+					
+					</div><!--sidebar -->
+					
+				</div>
+				<div class="block-wrap col col-lg-12 col-md-12 col-sm-12 offset-xl-0 offset-lg-0">
+					<header id="site-dev">
+						<div class="header__title">
+							<h1>Internet Agency of Teriam</h1>
+							<p>Разработка</p>
+							<p>Продвижение</p>
 						</div>
-						<div class="hidden-menu__items text-center flex-column">
-							<p><a href="">Разработка сайтов</a></p>
-							<p><a href="">Преимущества работы с нами</a></p>
-							<p><a href="">Цены</a></p>
-							<p><a href="">Контакты</a></p>
-							<button type="submit" class="btn-order">Заказать</button>
-							<span class="h-contacts"><p>+7-999-999-99-99</p></span>
-							<span class="h-contacts"><p>something@mail.com</p></span>
+					</header>
+					<section class="container-fluid">
+						<div class="row advantages pt-5 pb-5" id="adv">
+							<h2>Преимущества работы с нами</h2>
+							<table class="table table-borderless">
+								<tr>
+									<td><i class="fas fa-check-circle color-red"></i></td>
+									<td><p class="adv-item">Отчитываемся о проделанной работе раз в 10 часов</p></td>
+									<td><i class="fas fa-check-circle color-black"></i></td>
+									<td><p class="adv-item">Качество работы на хорошем уровне</p></td>
+								</tr>
+								<tr>
+									<td><i class="fas fa-check-circle color-black"></i></td>
+									<td><p class="adv-item">Есть разные вариации цен для вас</p></td>
+									<td><i class="fas fa-check-circle color-red"></i></td>
+									<td><p class="adv-item">Рабочий персонал с опытом в своем деле более 5 лет</p></td>
+								</tr>
+								<tr>
+									<td><i class="fas fa-check-circle color-red"></i></td>
+									<td><p class="adv-item">Кратчайшие сроки выполнения заказа</p></td>
+									<td><i class="fas fa-check-circle color-black"></i></td>
+									<td><p class="adv-item">Адекватные цены</p></td>
+								</tr>
+							</table>
 						</div>
-					</div>
-
-				
-			</div>
-			<div class="block-wrap col col-lg-12 offset-xl-2 offset-sm-0">
-				<header id="site-dev">
-					<div class="header__title">
-						<h1>Internet Agency of Teriam</h1>
-						<p>Разработка</p>
-						<p>Продвижение</p>
-					</div>
-				</header>
-				<div class="container-fluid">
-					<div class="row advantages mt-5 mb-5" id="adv">
-						<h2>Преимущества работы с нами</h2>
-						<table class="table table-borderless">
-							<tr>
-								<td><i class="fas fa-check-circle color-red"></i></td>
-								<td><p class="adv-item">Отчитываемся о проделанной работе раз в 10 часов</p></td>
-								<td><i class="fas fa-check-circle color-black"></i></td>
-								<td><p class="adv-item">Качество работы на хорошем уровне</p></td>
-							</tr>
-							<tr>
-								<td><i class="fas fa-check-circle color-black"></i></td>
-								<td><p class="adv-item">Есть разные вариации цен для вас</p></td>
-								<td><i class="fas fa-check-circle color-red"></i></td>
-								<td><p class="adv-item">Рабочий персонал с опытом в своем деле более 5 лет</p></td>
-							</tr>
-							<tr>
-								<td><i class="fas fa-check-circle color-red"></i></td>
-								<td><p class="adv-item">Кратчайшие сроки выполнения заказа</p></td>
-								<td><i class="fas fa-check-circle color-black"></i></td>
-								<td><p class="adv-item">Адекватные цены</p></td>
-							</tr>
-						</table>						
-					</div>
-					<div class="row" id="prices">
-						<div class="slider">
-							<div class="slider-content">
-								<h2>Наши цены</h2>
-								<h3>Создать сайт в короткие сроки</h3>
-								<span class="pl-5 pr-5"><p>Создание сайта в короткие сроки ни коим образом не повлияет на качество работы, а лишь ускорит её. Данный вариант занимает сроки выполнения от 1 до 3 дней. Работа выполняется несколькими командами профессиональных кадров.</p>
-								<p>Стоимость услуги: От 30 000 рублей</p></span>
-								<button>Заказать</button>
-							</div>
-							<div class="slider-content">
-								<h2>Наши цены</h2>
-								<h3>Создание сложных сайтов</h3>
-								<span class="pl-5 pr-5"><p>Создание профессиональных многостраничных сайтов. Сроки ограничиваются по договоренности с клиентом. Работа выполняется профессиональными исполнителями.</p>
-								<p>Стоимость услуги: От 50 000 рублей</p></span>
-								<button>Заказать</button>
-							</div>
-							<div class="slider-content">
-								<h2>Наши цены</h2>
-								<h3>Дешёвое создание сайтов</h3>
-								<span class="pl-5 pr-5"><p>Дешевые создания сайтов выполняются начинающими исполнителями. Качество работы гарантируем отличное. Все их работы проходят проверку профессионалами.</p>
-								<p>Стоимость: От 8 000 рублей</p></span>
-								<button>Заказать</button>
-							</div>
-							<div class="slider-content">
-								<h2>Наши цены</h2>
-								<h3>Стандартное создание сайтов</h3>
-								<span class="pl-5 pr-5"><p>Уровень сложности заказа средний.
-Над проектом работает одна команда специалистов среднего уровня. Сроки выполнения - договорные</p>
-								<p>Стоимость услуги: От 15 000 рублей</p></span>
-								<button>Заказать</button>
-							</div>
+						<div class="row" id="prices">
+							<ul class="slider">
+								<li class="slider-content">
+									<h2>Наши цены</h2>
+									<h3>Создать сайт в короткие сроки</h3>
+									<span class="pl-5 pr-5"><p>Создание сайта в короткие сроки ни коим образом не повлияет на качество работы, а лишь ускорит её. Данный вариант занимает сроки выполнения от 1 до 3 дней. Работа выполняется несколькими командами профессиональных кадров.</p>
+									<p>Стоимость услуги: От 30 000 рублей</p></span>
+									<button>Заказать</button>
+								</li>
+								<li class="slider-content">
+									<h2>Наши цены</h2>
+									<h3>Создание сложных сайтов</h3>
+									<span class="pl-5 pr-5"><p>Создание профессиональных многостраничных сайтов. Сроки ограничиваются по договоренности с клиентом. Работа выполняется профессиональными исполнителями.</p>
+									<p>Стоимость услуги: От 50 000 рублей</p></span>
+									<button>Заказать</button>
+								</li>
+								<li class="slider-content">
+									<h2>Наши цены</h2>
+									<h3>Дешёвое создание сайтов</h3>
+									<span class="pl-5 pr-5"><p>Дешевые создания сайтов выполняются начинающими исполнителями. Качество работы гарантируем отличное. Все их работы проходят проверку профессионалами.</p>
+									<p>Стоимость: От 8 000 рублей</p></span>
+									<button>Заказать</button>
+								</li>
+								<li class="slider-content">
+									<h2>Наши цены</h2>
+									<h3>Стандартное создание сайтов</h3>
+									<span class="pl-5 pr-5"><p>Уровень сложности заказа средний.
+									Над проектом работает одна команда специалистов среднего уровня. Сроки выполнения - договорные</p>
+									<p>Стоимость услуги: От 15 000 рублей</p></span>
+									<button>Заказать</button>
+								</li>
+								
+							</ul>
 						</div>
-					</div>
-					<section class="our-contacts text-center" id="contacts">
-						<h2>Контакты</h2>
-						<form action="sendMail.php" method="POST">
-							<p><input type="text" name="name" placeholder="Ваше имя"></p>
-							<p><input type="phone" name="phone" placeholder="Телефон"></p>
-							<p><input type="email" name="email" placeholder="email"></p>
-							<p><textarea name="message" rows="5" cols="118" placeholder="Комментарий"></textarea></p>
-							<span class="align-self-center"><button type="submit" class="btn btn-send pl-5 pr-5">Отправить</button></span>
-						</form>
-						
+						<section class="our-contacts text-center" id="contacts">
+							<h2>Контакты</h2>
+							<form action="sendMail.php" method="POST">
+								<p><input type="text" name="name" placeholder="Ваше имя"></p>
+								<p><input type="phone" name="phone" placeholder="Телефон"></p>
+								<p><input type="email" name="email" placeholder="email"></p>
+								<p><textarea name="message" rows="5" cols="118" placeholder="Комментарий"></textarea></p>
+								<span class="align-self-center"><button type="submit" class="btn btn-send pl-5 pr-5">Отправить</button></span>
+							</form>
+						</section>
 					</section>
 					
 				</div>
 				
-			</div>
-			
-			
-			</div><!--body-wrap-->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/slick.min.js"></script>			
-			<script src="js/main.js"></script>
-			<script src="js/menu.js"></script>
-		</body>
-	</html>
+				
+				</div><!--body-wrap-->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/slick.min.js"></script>
+				<script src="js/main.js"></script>
+				<script src="js/menu.js"></script>
+			</body>
+		</html>

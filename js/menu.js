@@ -1,5 +1,5 @@
 $(function() {
-	 if ($(window).width() == 540 ) {
+	 if ($(window).width() == 56000 ) {
 	 	$(".fixed-menu").css("top", "-1000px");
 	 } else {
 	 	$(".fixed-menu").css("top", "0");
@@ -9,7 +9,7 @@ $(function() {
 	$(".hamburger-menu").click(function() {
 		if(flag==0) {
 		$(".hidden-menu__items")
-		.css("display", "flex")
+		.css("display", "flex")		
 		.css("top", "70px");
 		
 		flag = 1;

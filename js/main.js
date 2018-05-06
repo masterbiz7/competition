@@ -1,5 +1,20 @@
 $(function() {
 
+  /*$('.bxslider').bxSlider({
+    mode: 'horizontal',
+    speed: 500,
+    slideSelector: '.slider-content',
+    adaptiveHeight: false,
+    responsive: true,
+    moveSlides: 1,
+    useCSS: false,    
+    touchEnabled: true,
+    controls: true,
+    prevSelector: '<img src="../img/slide-left.png" alt="next"/>',
+    nextSelector: '<img src="../img/slide-right.png" alt="next"/>'
+  });*/
+
+  
 $('.slider').slick({
   infinite: true,  
   slidesToScroll: 1,  
